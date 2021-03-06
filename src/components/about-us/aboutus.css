@@ -1,0 +1,22 @@
+
+.video-container{
+	padding: 5rem 1rem;
+	padding-right: 0;
+}
+.video-container .video-wrapper{
+	max-width: 70%;
+	margin: 0 auto;
+}
+.about-us{
+	background-color: #f9f9f9;
+}
+
+@media only screen and (max-width: 860px ){
+
+	.video-container{
+		padding: 0.5rem;
+	}
+	.video-container .video-wrapper{
+		max-width: 95%;
+	}
+}

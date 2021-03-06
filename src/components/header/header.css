@@ -1,0 +1,21 @@
+
+.navbar{
+	width: 100%;
+	position: fixed;
+	z-index: 11;
+	background-color: transparent;
+	color: #fff;
+	top: 0;
+	transition: all 0.8s ease-in-out;
+}
+.navbar li a{
+	color: #fff;
+}
+
+.navbar a{
+	color: #fff;
+}
+
+.navbar-nav{
+	margin-left: auto;
+}

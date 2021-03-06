@@ -1,0 +1,36 @@
+    .intro-info .row .text-box {
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .intro-info .row .text-box h5 {
+      font-size: 14px;
+      padding: 10px;
+      word-spacing: 0.23em;
+      color: #546071;
+      font-weight: 400px;
+
+    }
+
+    .intro-info .row {
+      width: 95%;
+      margin: 0 auto;
+      overflow: hidden;
+      justify-content: space-evenly;
+    }
+
+    .intro-info .row .col-lg-3 .img-box {
+      padding: 2rem;
+      max-width: 100%;
+    }
+
+    .intro-info img{
+      max-width: 100%;
+      opacity: 0.8;
+    }
+
+    @media screen and (max-width: 800px) {
+      .intro-info .row .col-lg-3 {
+        
+      }
+    }
