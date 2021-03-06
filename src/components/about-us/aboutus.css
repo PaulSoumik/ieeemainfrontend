@@ -6,9 +6,22 @@
 .video-container .video-wrapper{
 	max-width: 70%;
 	margin: 0 auto;
+	max-height: 100%;
+	
+}
+.video-container .video-wrapper div{
+	max-height: 100%;
 }
 .about-us{
 	background-color: #f9f9f9;
+}
+.video-js{
+	max-width: 100%;
+	background-color: transparent !important;
+	max-height: 100%;
+}
+.vjs-poster{
+	background-color: transparent !important;
 }
 
 @media only screen and (max-width: 860px ){
