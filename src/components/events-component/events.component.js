@@ -55,14 +55,14 @@ class Events extends Component {
   
   render() {
       return (
-        <div className="text-center main-container intro-info">
-        	<div className="jumbotron banner border-0 rounded-0">
+        <div className="main-container">
+        	<div className="text-center jumbotron banner border-0 rounded-0">
         		<h1 className="display-3 text-light"> Events </h1>
         	</div>
         	
-			  <div className="row">
+			  <div className="row ml-0 mr-0">
 			  	{this.state.retrieved ? "" : (
-			  		<div className="display-3 p-3">
+			  		<div className="text-center display-3 p-3">
 			  			Loading...
 			  		</div>
 			  		)}
@@ -72,7 +72,7 @@ class Events extends Component {
 				  			<div className="image-wrapper">
 				  				<img className="card-img-top" src={post.image} />
 				  			</div>
-						    <div className="card-body">
+						    <div className="card-body text-center" >
 						      <h5 className="card-title">{post.title}</h5>
 						      <p className="card-text"> {post.content.substring(0, 200)}... </p>
 						    </div>

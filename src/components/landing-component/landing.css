@@ -84,8 +84,26 @@ hr {
   align-items: center;
 }
 .main-slide .slider-img{
-  max-width: 80%;
+  max-width: 40%;
   margin: 0 auto;
+}
+
+.slider-data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.slider-data div{
+  padding-left: 2rem;
+  color: #fff !important;
+  font-size: 1.4em;
+  font-weight: 200;
+  word-spacing: 0.4em;
+}
+.slider-data div font{
+  font-size: 2em;
+  color: #ff9;
 }
 
 

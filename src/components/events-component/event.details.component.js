@@ -61,7 +61,7 @@ constructor(props) {
   
   render() {
       return (
-        <div className="text-center main-container intro-info">
+        <div className="text-center main-container">
         	<div className="jumbotron banner border-0 rounded-0">
         		<h1 className="display-3 text-light"> Events </h1>
         	</div>

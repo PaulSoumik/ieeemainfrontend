@@ -1,26 +1,74 @@
 import React, { Component } from "react";
-import { Link, Redirect, Switch, Route } from "react-router-dom";
+import { Link, Redirect, Switch, Route, NavLink } from "react-router-dom";
 import "./header.css"
 
 export default class Header extends Component {
 	  constructor(props) {
 	    super(props);
+	    this.checkMedia = this.checkMedia.bind(this);
+	    this.toggleHeader = this.toggleHeader.bind(this);
 
 	    this.state = {
-	    	color: 'transparent'
+	    	color: 'transparent',
+	    	isMobile: false,
+	    	navnotActive: true,
+	    	colortochange: "transparent"
 	    };
 	  }
 
 	  listenScrollEvent = e => {
 	    if (window.scrollY > 100) {
-	      this.setState({color: 'rgb(64, 144, 240)'})
+	      this.setState({color: '#49f'})
 	    } else {
-	      this.setState({color: 'transparent'})
+		    if(!this.state.isMobile){
+		      this.setState({color: 'transparent'})
+		    }
 	    }
 	  }
 
 	  componentDidMount() {
+	  	this.checkMedia();
+	  	window.addEventListener('resize', () => {
+	        this.setState({
+	            isMobile: window.innerWidth < 1024
+	        });
+	        if(this.state.isMobile){
+	        	this.setState({
+		            color: "#49f"
+		        });
+	        }
+	        else{
+	        	this.setState({
+		            color: "transparent"
+		        });
+	        }
+	    }, false);
 	     window.addEventListener('scroll', this.listenScrollEvent);
+	  }
+	  checkMedia(){
+	  	if(window.innerWidth < 1024){
+	  		this.setState({
+	            isMobile: true,
+	            color: "#49f"
+	        });
+	  	}
+	  }
+	  toggleHeader(){
+	  	if(this.state.isMobile){
+	  		if(this.state.navnotActive){
+	  			this.setState({
+	  				navnotActive : false,
+	  				
+	  			})
+	  		}
+	  		else{
+	  			this.setState({
+	  				navnotActive : true,
+	  				
+	  			})
+	  		}
+	  	}
+
 	  }
 
 
@@ -31,41 +79,38 @@ export default class Header extends Component {
 
 	  	 	<div>
 	  	 	<Route>
-			  	 <nav className="navbar navbar-expand" style={{backgroundColor: this.state.color}}>
+			  	 <nav className={`navbar navbar-expand ${this.state.isMobile ? "small-screen-navbar" : ""}`} style={{backgroundColor: this.state.color}}>
 			          <a href="#" className="navbar-brand">
 			            IEEESBNITD
 			          </a>
-			          
-			          <div className= "navbar-nav">
+			          <button className={`header-burger ${this.state.isMobile ? "activate" : ""} ${this.state.navnotActive ? "" : "header-burger-active"}`} onClick={this.toggleHeader}>
+			          </button>
+			          <></>
+			          <div className={`navbar-nav ${this.state.isMobile ? "small-screen-nav" : ""} ${this.state.isMobile && this.state.navnotActive ? "nav-deactive" : "nav-active"}`}>
 			            <li className= "nav-item"><></>
-			              <Link to={"/"} className="nav-link">
+			              <NavLink exact to={"/"} className="nav-link" activeclassName='active'>
 			                Home
-			              </Link>
+			              </NavLink>
 			            </li>
 			            <li className="nav-item">
-			              <Link to={"#"} className="nav-link">
-			                About Us
-			              </Link>
-			            </li>
-			            <li className="nav-item">
-			              <Link to={"/members"} className="nav-link">
+			              <NavLink exact to={"/members"} className="nav-link" activeclassName='active'>
 			                Team
-			              </Link>
+			              </NavLink>
 			            </li>
 			            <li className="nav-item">
-			              <Link to={"#"} className="nav-link">
+			              <NavLink exact to={"/alumni"} className="nav-link" activeclassName='active'>
 			                Alumni
-			              </Link>
+			              </NavLink>
 			            </li>
 			            <li className="nav-item">
-			              <Link to={"/events"} className="nav-link">
+			              <NavLink exact to={"/events"} className="nav-link" activeclassName='active'>
 			                Activities
-			              </Link>
+			              </NavLink>
 			            </li>
 			            <li className="nav-item">
-			              <Link to={"#"} className="nav-link">
+			              <a href="#contact-us" className="nav-link">
 			                Contact Us
-			              </Link>
+			              </a>
 			            </li>
 			          </div>
 			        </nav>

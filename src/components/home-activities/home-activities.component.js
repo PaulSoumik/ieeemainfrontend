@@ -95,7 +95,7 @@ export default class ActivitiesHome extends Component {
 	  	 	<div className="main-container p-3">
 	  	 	<h2 className="special-headers mb-5 m-3"> Activities </h2> 
 	  	 		<div className="mw-80">
-		  	 		<div className="row mr-0 ml-0 border bdr-25 actiWrappers">
+		  	 		<div className="row mr-1 ml-1 border bdr-25 actiWrappers">
 		  	 			<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 pl-0 mpad-0">
 		  	 				<div className="row mr-0 ml-0 mpad-1">
 		  	 					<div className="cover-img mpad-0 col-9 col-xs-9 col-sm-9 col-md-12 col-lg-12">

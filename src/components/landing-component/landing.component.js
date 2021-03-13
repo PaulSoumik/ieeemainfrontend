@@ -11,7 +11,7 @@ class Landing extends Component {
         <div className="text-center main-container">
           <SlideShow
             autoPlay={true}
-            activeSlideDuration={3000}
+            activeSlideDuration={30000}
             interactionMode="swipe"
             alignCaption="center"
             alignIndicators="center"
@@ -27,14 +27,22 @@ class Landing extends Component {
           >
             <div>
               <div className="main-slide">
-                  <div className="slide-background-image firstSlider">
+                  <div className="slide-background-image firstSlider slider-data">
+                        <div>
+                          <p>Where</p>
+                          <span> <font>Technology</font> and <font>Research</font> brews</span>
+                        </div>
 
                   </div>
               </div>
             </div>
             <div>
               <div className="main-slide">
-                  <div className="slide-background-image secondSlider">
+                  <div className="slide-background-image secondSlider slider-data">
+                        <div>
+                          <p>Where</p>
+                          <span> <font>Inspiration</font> breeds <font>Success</font></span>
+                        </div>
 
                   </div>
               </div>
@@ -42,6 +50,7 @@ class Landing extends Component {
             <div>
               <div className="main-slide">
                   <div className="slide-background-image thirdSlider">
+                        
 
                   </div>
                   <div className="main-content">

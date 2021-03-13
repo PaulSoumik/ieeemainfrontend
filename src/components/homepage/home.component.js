@@ -11,7 +11,12 @@ import React, { Component } from "react";
 import PostDataService from "../../services/post.service"
 import Fade from 'react-reveal/Fade';
 import ActivitiesHome from "../home-activities/home-activities.component.js"
-
+import Stats from "../stats-component/stats.component.js"
+import Insight from "../insight-component/insight.component.js"
+import Team from "../team-component/team.component.js"
+import Testinomials from "../testinomial-component/testinomial.component.js"
+import Collab from "../collab-component/collab.component.js"
+import Contact from "../contact-component/contact.component.js"
 
 
 class Home extends Component {
@@ -35,8 +40,15 @@ class Home extends Component {
           <Landing/>
 	      <InfoG/>
 	      <AboutUs/>
+	      <Stats/>
 	      <InfoIEEE/>
 	      <ActivitiesHome/>
+	      <Insight/>
+	      <Team/>
+	      <Testinomials/>
+	      <Collab/>
+	      <Contact/>
+
         </div>
           
       )

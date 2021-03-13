@@ -16,48 +16,64 @@ class InfoG extends Component {
         	
 			  <div className="row">
 			  <Fade up delay={200}>
-		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-		          <div className="img img-box">
-		            <img src={info1} />
+		        <div className=" col-xs-12 col-sm-6 col-md-3 col-lg-3 align-self-stretch">
+		        	<div className="card">
+		        		<div className="jumbotron jumbotron-special">
+			  	 		</div>
+		        	  <div className="img img-box">
+			            <img src={info1} />
 
-		          </div>
-		          <div className="text-box">
-		            <h5 className="display">Providing the perfect platform for all to
-		              collaborate and innovate.</h5>
-		          </div>
+			          </div>
+			          <div className="text-box">
+			            <p className="display bdlight-text">Providing the perfect platform for all to
+			              collaborate and innovate.</p>
+			          </div>
+			        </div>
 		        </div>
 		        </Fade>
 		        <Fade up delay={400}>
-		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-		          <div className="img img-box">
-		            <img src={info2} />
-		          </div>
-		          <div className="text-box">
-		            <h5 className="display">Attend seminars and workshops on the most trending
-		              and interesting topics led by leading scientists and industry personnel</h5>
-		          </div>
+		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 align-self-stretch">
+		        	<div className="card">
+			        	<div className="jumbotron jumbotron-special">
+			  	 		</div>
+			          <div className="img img-box">
+			            <img src={info2} />
+			          </div>
+			          <div className="text-box">
+			            <p className="display bdlight-text">Attend seminars and workshops on the most trending
+			              and interesting topics led by leading scientists and industry personnel</p>
+			          </div>
+			        </div>
 		        </div>
 		        </Fade>
 		        <Fade up delay={600}>
-		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-		          <div className="img img-box">
-		            <img src={info3} />
-		          </div>
-		          <div className="text-box">
-		            <h5 className="display">Collaborate with the best minds to take your
-		              projects to the next level.</h5>
-		          </div>
+		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 align-self-stretch">
+			        <div className="card">
+			        	<div className="jumbotron jumbotron-special">
+			  	 		</div>
+			          <div className="img img-box">
+			            <img src={info3} />
+			          </div>
+			          <div className="text-box">
+			            <p className="display bdlight-text">Collaborate with the best minds to take your
+			              projects to the next level.</p>
+			          </div>
+			        </div>
 		        </div>
 		        </Fade>
 		        <Fade up delay={800}>
-		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-		          <div className="img img-box">
-		            <img src={info4} />
-		          </div>
-		          <div className="text-box">
-		            <h5 className="display">Expand your network by connecting with the best
-		              minds in the field.</h5>
-		          </div>
+		        <div className="col-xs-12 col-sm-6 col-md-3 col-lg-3 align-self-stretch">
+		        	<div className="card">
+		        		<div className="jumbotron jumbotron-special">
+			  	 		</div>
+			          <div className="img img-box">
+			            <img src={info4} />
+			          </div>
+			          <div className="text-box">
+			            <p className="display bdlight-text">Expand your network by connecting with the best
+			              minds in the field.</p>
+			          </div>
+		            </div>
 		        </div>
 		        </Fade>
 		      </div>

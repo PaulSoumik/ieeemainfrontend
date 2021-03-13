@@ -1,19 +1,29 @@
 
 .video-container{
-	padding: 5rem 1rem;
+	padding: 2rem 1rem;
 	padding-right: 0;
+	display: flex;
+	align-items: center;
+}
+.content-wrapper{
+	padding: 2rem 1rem !important;
+	display: block;
+	align-items: center;
 }
 .video-container .video-wrapper{
-	max-width: 70%;
+	
 	margin: 0 auto;
-	max-height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 	
 }
-.video-container .video-wrapper div{
-	max-height: 100%;
+.video-container .video-wrapper .vjs-tech ,.video-container .video-wrapper .vjs-poster{
+	width: 100%;
 }
+
 .about-us{
-	background-color: #f9f9f9;
+	
 }
 .video-js{
 	max-width: 100%;
@@ -31,5 +41,9 @@
 	}
 	.video-container .video-wrapper{
 		max-width: 95%;
+	}
+	.about-us .content-wrapper{
+		padding-right: 0!important;
+		padding-left: 0!important;
 	}
 }

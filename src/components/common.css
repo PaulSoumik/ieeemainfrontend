@@ -1,35 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&display=swap');
 
 body{
-	font-size: 15px!important;
-	font-family: 'Gothic A1',-apple-system,BlinkMacSystemFont, 'Exo', sans-serif;
-	line-height: 25px;
+	font-size: 14px!important;
+	font-family: 'Manrope' , 'Gothic A1',-apple-system, BlinkMacSystemFont, Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
 	color: #464646;
 }
-
-
+*{
+	scroll-behavior: smooth;
+}
+.bdlight-text{
+	color: rgba(0,0,0,.7) !important;
+}
+.card{
+	border-radius: unset !important;
+}
+.jumbotron-special{
+	padding: 4px!important;
+	background: #49f;
+	border-radius: unset;
+}
 .special-headers{
-	color:#49f;
+	color: #000;
     padding: 1rem 0px;
-    width: 95%;
+    width: fit-content;
     font-size: 45px;
-    font-weight: 400;
-    border-bottom: 1.5px solid ;
-    margin-bottom: 1rem;
-    padding-bottom: 0.3rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1rem auto !important;
+    margin-bottom: 3rem !important;
+    padding-bottom: 1rem;
+}
+.special-headers::after{
+	content: "";
+	height: 2px;
+	width: 45px;
+	margin-top: 0.9rem;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: #000;
 }
 .special-sub-headers{
 	color:#292929;
     padding: 1rem 0px;
-    width: 95%;
+    width: fit-content;
     font-size: 29px;
-    font-weight: 300;
-    border-bottom: 1.5px solid ;
+    font-weight: 600;
+    /*border-bottom: 2.5px solid ;*/
     margin-bottom: 0.5rem;
     padding-bottom: 0.3rem;
 }
+.special-sub-headers::after{
+	content: "";
+	height: 2px;
+	width: 80%;
+	margin-top: 0.2rem;
+	margin-left: auto;
+	margin-right: -15%;
+	display: block;
+	background-color: #292929;
+}
+.main-container{
+	max-width: 100%;
+
+}
+
 .img-100{
 	width: 100%;
 }
@@ -42,7 +80,10 @@ body{
 }
 
 .theme-bg{
-	background-color: rgb(64, 144, 240);
+	background-color: #49f;
+}
+.dark-bg{
+	background: #eeeeee;
 }
 .mw-60{
 	max-width: 60%;
@@ -61,9 +102,25 @@ body{
 .w-100{
 	width: 100%;
 }
+.w-100vw{
+	width: 100vw;
+}
+.btn-special{
+	background-color: #49f;
+	border: none;
+	color: #fff;
+}
+.btn-special:hover{
+	background-color: #3e8eee;
+	color: #fff;
+}
 @media only screen and (max-width: 860px){
+	body{
+		font-size: 13px !important;
+	}
 	.special-headers{
 		font-size: 35px;
+		margin-bottom: 1.5rem !important;
 	}
 	.special-sub-headers{
 		font-size: 27px;
@@ -82,5 +139,9 @@ body{
 	}
 	.mpad-1{
 		padding: 1rem!important;
+	}
+	.p-3{
+		padding: 1rem 0.5rem !important;
+
 	}
 }
