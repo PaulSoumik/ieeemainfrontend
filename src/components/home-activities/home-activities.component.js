@@ -11,7 +11,7 @@ import sdv2 from "../../media/images/sdv-2.jpg"
 import sdv3 from "../../media/images/sdv-3.jpg"
 
 import intelli1 from "../../media/images/intelli-1.jpg"
-import intelli2 from "../../media/images/intelli-2.jpg"
+import intelli2 from "../../media/images/intelli-2.webp"
 import intelli3 from "../../media/images/intelli-3.jpg"
 
 export default class ActivitiesHome extends Component {
